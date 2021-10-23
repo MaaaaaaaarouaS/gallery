@@ -14,7 +14,7 @@ const Logo=()=>{
             <Grid className="grid_1" align='center'>
                 <Button type='submit' variant="contained" style={btn1style} fullWidth><Link style={link1} to="/signup">Sign up</Link></Button>
                 <h1>OR</h1>
-                <Button type='submit' style={btn2style} fullWidth><Link style={link2} to="/login">Log in</Link></Button>
+                <Button type='submit' style={btn2style} fullWidth><Link style={link2} to="/">Log in</Link></Button>
             </Grid>  
         </Grid>   
     )

@@ -14,10 +14,10 @@ function App() {
     <div>
        <Router>
         <Switch>
-          <Route exact path='/' component={Gallery} />
+          <Route exact path='/' component={Login}/>
           <Route exact path='/Signup' component={Signup} style={{backgroundColor:"#FFFF"}}/>
           <Route exact path='/Signup_with_Account' component={SignupAccount} />
-          <Route exact path='/login' component={Login} />
+          <Route exact path='/gallery' component={Gallery} />
           <Route exact path='/forget_password' component={Forgetpwd} />
           <Route exact path='/reset_password' component={Resetpwd} />
           <Route exact path='/notif' component={Notif} />

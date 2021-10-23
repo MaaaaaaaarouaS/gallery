@@ -9,6 +9,7 @@ const Login=()=>{
     const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#e1b11e',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
     const inputstyle={marginBottom:'10px'}
     const linkstyle={textDecoration: 'none',color:'#e1b11e',paddingLeft:'10px'}
+    const link1={color:'white',textDecoration: 'none' }
     return(
         <Grid> 
             <Paper className="grid_form" elevation={0} >
@@ -34,7 +35,7 @@ const Login=()=>{
                  />
                  <Typography><Link style={{color:'#5b5b5b',fontSize:'12px'}} to="/forget_password">Forgot password?</Link></Typography>
                 <Grid align='center'>
-                    <Button type='submit' variant="contained" style={btnstyle} fullWidth>Log in</Button>
+                    <Button type='submit' variant="contained" style={btnstyle} fullWidth><Link style={link1} to="/gallery">Log in</Link></Button>
                 </Grid>
                 <Typography style={{fontSize:'11px'}} align='center'> Don't have an account ? 
                      <Link style={linkstyle} to="/signup" >

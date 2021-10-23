@@ -13,7 +13,7 @@ const Notif=()=>{
                <h2 style={h2style}>We've sent you an email with password reset instructions.</h2>
                <h2 style={h2style}>If the email doesn't show up soon,check your spam folder.</h2>
                  <Grid align='center'>
-                    <Button type='submit' variant="contained" style={btnstyle} fullWidth><Link to="/login" style={link1}>Return To Login</Link></Button>
+                    <Button type='submit' variant="contained" style={btnstyle} fullWidth><Link to="/" style={link1}>Return To Login</Link></Button>
                 </Grid>
             </Paper>
             <div style={logo}>

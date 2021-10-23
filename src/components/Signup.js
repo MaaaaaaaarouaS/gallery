@@ -8,6 +8,7 @@ const Signup=()=>{
     const inputstyle={marginBottom:'10px'}
     const linkstyle={textDecoration: 'none',color:'#e1b11e',paddingLeft:'10px'}
     const pstyle={color:'#5b5b5b',fontSize:'10px',maxWidth:'85%'}
+    const link1={color:'white',textDecoration: 'none' }
     return(
         <Grid> 
             <Paper className="grid_form" elevation={0} >
@@ -20,10 +21,10 @@ const Signup=()=>{
                 <TextField style={inputstyle}  label='Password' variant="outlined" type='password' fullWidth size="small"required/>
                 <TextField style={inputstyle}  label='Confirm password' variant="outlined" type='password' fullWidth size="small"required/>
                 <Grid align='center'>
-                    <Button type='submit' variant="contained" style={btnstyle} fullWidth>Create Account</Button>
+                    <Button type='submit' variant="contained" style={btnstyle} fullWidth><Link style={link1} to="/Signup_with_Account">Create Account</Link></Button>
                 </Grid>
                 <Typography style={{fontSize:'11px'}} align='center'> Already have an account ? 
-                     <Link to="/login" style={linkstyle}>
+                     <Link to="/" style={linkstyle}>
                          Log in! 
                      </Link>
                     </Typography>
