@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Signup from './components/Signup';
+import SignupAccount from './components/SignupAccount';
+import Login from './components/Login';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Forgetpwd from './components/Forgetpwd';
+import Resetpwd from './components/Resetpwd';
+import Notif from './components/Notif';
+import Verify from './components/Verify';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Router>
+        <Switch>
+          <Route exact path='/' component={Gallery} />
+          <Route exact path='/Signup' component={Signup} style={{backgroundColor:"#FFFF"}}/>
+          <Route exact path='/Signup_with_Account' component={SignupAccount} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/forget_password' component={Forgetpwd} />
+          <Route exact path='/reset_password' component={Resetpwd} />
+          <Route exact path='/notif' component={Notif} />
+          <Route exact path='/verify' component={Verify} />
+        </Switch>
+      </Router>
     </div>
   );
 }
-
 export default App;
