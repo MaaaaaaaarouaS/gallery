@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid,Paper, Button} from '@material-ui/core'
 import {Link} from "react-router-dom"
 const Resetpwd=()=>{
-    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#e1b11e',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
+    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#f1AB65',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
     const link1={color:'white',textDecoration: 'none' }
     return(
         <div className="Body_pwd">

@@ -3,14 +3,15 @@ import '../App.css'
 import Logo from './Logo'
 import { Grid,Paper,TextField, Button, Typography} from '@material-ui/core'
 import {Link} from "react-router-dom";
+import Footer from './Footer';
 const Signup=()=>{
-    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#e1b11e',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
+    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#f1AB65',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
     const inputstyle={marginBottom:'10px'}
-    const linkstyle={textDecoration: 'none',color:'#e1b11e',paddingLeft:'10px'}
+    const linkstyle={textDecoration: 'none',color:'#f1AB65',paddingLeft:'10px'}
     const pstyle={color:'#5b5b5b',fontSize:'10px',maxWidth:'85%'}
     const link1={color:'white',textDecoration: 'none' }
     return(
-        <Grid> 
+        <Grid>  
             <Paper className="grid_form" elevation={0} >
                 <Grid align='center'>
                     <span className="dot"></span>
@@ -24,7 +25,7 @@ const Signup=()=>{
                     <Button type='submit' variant="contained" style={btnstyle} fullWidth><Link style={link1} to="/Signup_with_Account">Create Account</Link></Button>
                 </Grid>
                 <Typography style={{fontSize:'11px'}} align='center'> Already have an account ? 
-                     <Link to="/" style={linkstyle}>
+                     <Link to="/login" style={linkstyle}>
                          Log in! 
                      </Link>
                     </Typography>
@@ -32,9 +33,11 @@ const Signup=()=>{
                     <p style={pstyle}>By creating an account,you agree to our <Link to="/conditions"> Terms and Conditions.</Link>We'll never post or share anything wiyhout your permission</p>                
                 </Grid>
             </Paper>
-           <Logo/>
+            <Grid style={{marginTop:'57%'}}>
+                <Logo/>
+                <Footer/>
+            </Grid>  
         </Grid>
-        
     )
 }
 export default Signup

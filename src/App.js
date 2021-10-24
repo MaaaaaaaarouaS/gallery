@@ -8,13 +8,15 @@ import Resetpwd from './components/Resetpwd';
 import Notif from './components/Notif';
 import Verify from './components/Verify';
 import Gallery from './components/Gallery';
+import Index from './components/Index';
 
 function App() {
   return (
     <div>
        <Router>
         <Switch>
-          <Route exact path='/' component={Login}/>
+          <Route exact path='/' component={Index}/>
+          <Route exact path='/login' component={Login}/>
           <Route exact path='/Signup' component={Signup} style={{backgroundColor:"#FFFF"}}/>
           <Route exact path='/Signup_with_Account' component={SignupAccount} />
           <Route exact path='/gallery' component={Gallery} />

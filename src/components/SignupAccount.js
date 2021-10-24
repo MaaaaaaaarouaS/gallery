@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid,Paper, Button, Typography,Link } from '@material-ui/core'
 import Logo from './Logo'
+import Footer from './Footer'
 const SignupAccount=()=>{
     const btntwitch={fontFamily: 'serif',textTransform : 'none',margin:'8px 0',backgroundColor: '#8457cc',borderRadius:'6px',width: '85%',color:'white',fontSize:'14px'}
     const btnfb={fontFamily: 'serif',textTransform : 'none',margin:'8px 0',backgroundColor: '#356cac',borderRadius:'6px',width: '85%',color:'white',fontSize:'14px'}
@@ -22,7 +23,7 @@ const SignupAccount=()=>{
                     <Button type='submit' variant="contained" style={btnemail} fullWidth>Sign up with Email</Button>
                 </Grid>
                 <Typography style={{fontSize:'11px'}} align='center'> Already have an account ? 
-                     <Link style={{color:'#e1b11e',paddingLeft:'10px'}} href="#" >
+                     <Link style={{color:'#f1AB65',paddingLeft:'10px'}} href="#" >
                          Log in! 
                      </Link>
                     </Typography>
@@ -30,7 +31,10 @@ const SignupAccount=()=>{
                     <p style={{color:'#5b5b5b',fontSize:'10px',maxWidth:'85%'}}>We'll never post or share anything without your permission.</p>                
                 </Grid>
             </Paper>
-            <Logo/>   
+            <Grid style={{marginTop:'55%'}}>
+                <Logo/>
+                <Footer/>
+            </Grid> 
         </Grid>        
     )
 }

@@ -10,6 +10,7 @@ export default function Galerry() {
   return (
     <div className="Body_gallery">
     <Navigation/>
+    <div className="contain">
       <div className="container">
         <div className="imgContainer">
           {data.gallery.map(data => (
@@ -28,10 +29,10 @@ export default function Galerry() {
          </div>
         <div className="imgContainer3">
             <img src={selectedImg} alt="Selected" className="selected" />
-            <h4 style={{fontSize:'23px',marginLeft:'30px',marginTop:'-8%'}}>Album Ninja</h4>
-            <div style={{marginLeft:'-140px'}}>
-                <Button><Icon className="icongallery" style={{backgroundColor: 'rgb(27, 2, 51)'}} icon="entypo:share"/></Button>
-                <Button><Icon className="icongallery" style={{backgroundColor: 'rgb(253, 237, 9)'}} icon="ci:edit"/></Button>
+            <h4 style={{fontSize:'23px',marginLeft:'30px',marginTop:'0%'}}>Album Ninja</h4>
+            <div style={{marginLeft:'-140px',marginTop:'40px'}}>
+                <Icon className="icongallery" style={{backgroundColor: 'rgb(27, 2, 51)'}} icon="entypo:share"/> 
+                <Icon className="icongallery" style={{backgroundColor: 'rgb(253, 237, 9)'}} icon="ci:edit"/>
             </div>
         </div>
         <div className="imgContainer4">
@@ -42,6 +43,8 @@ export default function Galerry() {
             />            
           ))
           }
+          </div>
+          <div className="imgContainer5"></div>
         </div>
       </div>
     </div>

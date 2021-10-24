@@ -2,8 +2,9 @@ import React from 'react'
 import { Grid,Paper,TextField, Button} from '@material-ui/core'
 import {Link} from "react-router-dom"
 import Logo from './Logo'
+import Footer from './Footer';
 const Forgetpwd=()=>{
-    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#e1b11e',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
+    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#f1AB65',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
     const inputstyle={marginBottom:'10px'}
     const link1={color:'white',textDecoration: 'none' }
     return(
@@ -18,9 +19,10 @@ const Forgetpwd=()=>{
                     <Button type='submit' variant="contained" style={btnstyle} fullWidth><Link to="reset_password" style={link1}>Submit</Link></Button>
                 </Grid>
             </Paper>
-            <div style={{marginTop:'11%'}}>
+            <Grid style={{marginTop:'65%'}}>
                 <Logo/>
-            </div>   
+                <Footer/>
+            </Grid>
         </Grid>       
     )
 }

@@ -19,5 +19,5 @@ const Verify=()=>{
             </Grid>   
         </Grid>      
     )
-}
+} 
 export default Verify

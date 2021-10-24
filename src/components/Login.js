@@ -5,10 +5,11 @@ import Checkbox from '@material-ui/core/Checkbox';
 import {Link} from "react-router-dom";
 import './Signup'
 import Logo from './Logo';
+import Footer from './Footer';
 const Login=()=>{
-    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#e1b11e',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
+    const btnstyle={textTransform : 'none',margin:'8px 0',backgroundColor: '#f1AB65',borderRadius:'20px',width: '150px',color:'white',fontSize:'15px'}
     const inputstyle={marginBottom:'10px'}
-    const linkstyle={textDecoration: 'none',color:'#e1b11e',paddingLeft:'10px'}
+    const linkstyle={textDecoration: 'none',color:'#f1AB65',paddingLeft:'10px'}
     const link1={color:'white',textDecoration: 'none' }
     return(
         <Grid> 
@@ -23,7 +24,7 @@ const Login=()=>{
                     control={
                     <Checkbox 
                     style={{
-                        color: "#f1c232",
+                        color: "#f1AB65",
                         width: 16,
                         height: 16
                       }}
@@ -31,7 +32,7 @@ const Login=()=>{
                         size="small"
                     />
                     }
-                    label={<Typography variant="body2" color="#5b5b5b" style={{fontSize:'12px'}} >Auto Login</Typography>}
+                    label={<Typography variant="body2" style={{fontSize:'12px'}} >Auto Login</Typography>}
                  />
                  <Typography><Link style={{color:'#5b5b5b',fontSize:'12px'}} to="/forget_password">Forgot password?</Link></Typography>
                 <Grid align='center'>
@@ -46,9 +47,10 @@ const Login=()=>{
                     <p style={{color:'#5b5b5b',fontSize:'10px',maxWidth:'85%'}}>We'll never post or share anything without your permission.</p>                
                 </Grid>
             </Paper>
-            <div style={{marginTop:'5%'}}>
+            <Grid style={{marginTop:'60%'}}>
                 <Logo/>
-            </div>   
+                <Footer/>
+            </Grid>   
         </Grid>      
     )
 }
